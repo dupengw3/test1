@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6352C61D1F628F5D00879362 /* AliyunPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6352C6131F628F4F00879362 /* AliyunPlayerSDK.framework */; };
+		637265881F613C8E00C696B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637265871F613C8E00C696B5 /* SystemConfiguration.framework */; };
 		63A9C33E1F50075600D85A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9C33D1F50075600D85A08 /* AppDelegate.swift */; };
 		63A9C3401F50075600D85A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9C33F1F50075600D85A08 /* ViewController.swift */; };
 		63A9C3431F50075600D85A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A9C3411F50075600D85A08 /* Main.storyboard */; };
@@ -15,6 +17,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6352C6131F628F4F00879362 /* AliyunPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunPlayerSDK.framework; sourceTree = "<group>"; };
+		6352C6141F628F4F00879362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6352C6151F628F4F00879362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6352C6171F628F4F00879362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6352C6191F628F4F00879362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6352C61A1F628F4F00879362 /* gitTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gitTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		6352C61B1F628F4F00879362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6352C61C1F628F4F00879362 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		637265871F613C8E00C696B5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		637265891F613DB600C696B5 /* gitTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gitTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		63A9C33A1F50075600D85A08 /* gitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A9C33D1F50075600D85A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A9C33F1F50075600D85A08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +41,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6352C61D1F628F5D00879362 /* AliyunPlayerSDK.framework in Frameworks */,
+				637265881F613C8E00C696B5 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6352C6121F628F4F00879362 /* gitTest */ = {
+			isa = PBXGroup;
+			children = (
+				6352C6131F628F4F00879362 /* AliyunPlayerSDK.framework */,
+				6352C6141F628F4F00879362 /* AppDelegate.swift */,
+				6352C6151F628F4F00879362 /* Assets.xcassets */,
+				6352C6161F628F4F00879362 /* LaunchScreen.storyboard */,
+				6352C6181F628F4F00879362 /* Main.storyboard */,
+				6352C61A1F628F4F00879362 /* gitTest-Bridging-Header.h */,
+				6352C61B1F628F4F00879362 /* Info.plist */,
+				6352C61C1F628F4F00879362 /* ViewController.swift */,
+			);
+			path = gitTest;
+			sourceTree = "<group>";
+		};
+		637265861F613C8E00C696B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6352C6121F628F4F00879362 /* gitTest */,
+				637265871F613C8E00C696B5 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63A9C3311F50075600D85A08 = {
 			isa = PBXGroup;
 			children = (
 				63A9C33C1F50075600D85A08 /* gitTest */,
 				63A9C33B1F50075600D85A08 /* Products */,
+				637265861F613C8E00C696B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +99,7 @@
 				63A9C3441F50075600D85A08 /* Assets.xcassets */,
 				63A9C3461F50075600D85A08 /* LaunchScreen.storyboard */,
 				63A9C3491F50075600D85A08 /* Info.plist */,
+				637265891F613DB600C696B5 /* gitTest-Bridging-Header.h */,
 			);
 			path = gitTest;
 			sourceTree = "<group>";
@@ -97,6 +137,7 @@
 					63A9C3391F50075600D85A08 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 33XDSGFPN7;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +186,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6352C6161F628F4F00879362 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6352C6171F628F4F00879362 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6352C6181F628F4F00879362 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6352C6191F628F4F00879362 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		63A9C3411F50075600D85A08 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,11 +318,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 33XDSGFPN7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/gitTest/AliyunPlayerSDK_iOS_3.0.0_20170831/arm",
+					"$(PROJECT_DIR)/gitTest/AliyunPlayerSDK_iOS_3.0.0_20170831/arm&simulator",
+					"$(PROJECT_DIR)/gitTest",
+				);
 				INFOPLIST_FILE = gitTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wlw.gitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gitTest/gitTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +341,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 33XDSGFPN7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/gitTest/AliyunPlayerSDK_iOS_3.0.0_20170831/arm",
+					"$(PROJECT_DIR)/gitTest/AliyunPlayerSDK_iOS_3.0.0_20170831/arm&simulator",
+					"$(PROJECT_DIR)/gitTest",
+				);
 				INFOPLIST_FILE = gitTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wlw.gitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gitTest/gitTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +378,7 @@
 				63A9C34E1F50075600D85A08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
